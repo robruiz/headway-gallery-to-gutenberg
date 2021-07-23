@@ -5,7 +5,7 @@ Plugin URI: https://github.com/robruiz/headway-gallery-to-gutenberg
 Description: Convert Headway HWR Galleries to Gutenberg Galleries
 Version: 1.0
 Requires PHP: 7.0
-Requires at least: 7.0
+Requires at least: 4.5
 Author: Rob Ruiz
 Author URI: https://www.linkedin.com/in/robcruiz/
 License: GPLv3 or later
