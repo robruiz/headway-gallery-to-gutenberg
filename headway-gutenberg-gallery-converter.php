@@ -11,20 +11,20 @@ Author URI: https://www.linkedin.com/in/robcruiz/
 License: GPLv3 or later
  */
 
-function amfence_convert_headway_gallery_mb() {
+function convert_headway_gallery_mb() {
     $screens = [ 'page' ];
     foreach ( $screens as $screen ) {
         add_meta_box(
             'amfence_convert_headway_gallery',                 // Unique ID
             'Convert Headway Gallery',      // Box title
-            'amfence_convert_headway_gallery_script',  // Content callback, must be of type callable
+            'convert_headway_gallery_script',  // Content callback, must be of type callable
             $screen                            // Post type
         );
     }
 }
-add_action( 'add_meta_boxes', 'amfence_convert_headway_gallery_mb' );
+add_action( 'add_meta_boxes', 'convert_headway_gallery_mb' );
 
-function amfence_convert_headway_gallery_script($post){
+function convert_headway_gallery_script($post){
 
     $galleries_args = array(
         'post_type' => 'hwr_gallery',
